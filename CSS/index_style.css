@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*ESTILOS PARA EL BODY*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    font-size: 1rem; 
+    margin: 0px;
+    padding: 0px;
+    color: #333;
+    background-color: #f3f3f3;
+
+}
+
+/*ESTILOS PARA EL HEADER*/
+.banner_superior {
+    text-align: center;
+    background-color:  rgb(223, 212, 228);
+}
+
+.header_superior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.header_superior h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.header_superior ul {
+    list-style: none;
+}
+
+/* ESTILO PARA TODAS LAS ANCHOR y LISTAS */
+a {
+    text-decoration: none;
+}
+a:link :visited{
+    color:rgb(100, 0, 84);
+}
+a:hover {
+    color:rgba(59, 6, 82, 0.603);
+    font-weight: 600;
+}
+
+
+/* ESTILO PARA TODAS LAS CATEGORIAS */
+.productos_por_categorias {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.titulo_categoria {
+    padding-left: 10px;
+}
+
+/* ESTILO PARA TODOS LOS PRODUCTOS */
+article {
+    text-align: left;
+    padding: 1.25rem; 
+    margin: 1rem 0.5rem; 
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.75rem; 
+    box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.25);
+    width: 200px;
+    min-width: 200px;
+}
+
+/* ESTILO PARA SECCION DEL FORMULARIO DE CONTACTO */
+/* aca tengo que corregir flexbox se ve pesimo en telefono */
+
+.seccion_contacto {
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    padding: 20px;
+    background-color: rgb(223, 212, 228);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.formulario-de-contacto {
+
+    background-color: whitesmoke;
+    border: solid, 0.5px, #e7e7e7;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    max-width: 400px;
+}
+
+.formulario-de-contacto h3 {
+    font-size: 18px;
+}
+
+.formulario-de-contacto input, textarea {
+    margin: 5px 5px 10px 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.formulario-de-contacto textarea {
+    height: 80px;
+}
+
+.formulario-de-contacto button {
+    margin: 10px;
+    padding: 8px;
+    font-size: 15px;
+    background-color: rgba(59, 6, 82, 0.603);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ESTILO PARA EL FOOTER */
+footer ul, footer a {
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    list-style-type: none;
+}
+
+footer a:link{
+    color: #000;
+}
+footer a:visited {
+        color: #000;
+}
+
