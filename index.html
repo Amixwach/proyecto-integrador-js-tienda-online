@@ -6,6 +6,7 @@
     <title> Yoga y Elementos </title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="IMAGENES/ICONOS/icon_loto.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./CSS/index_style.css">
 
 
@@ -17,15 +18,17 @@
         <!-- header siempre visible -->
         <div class="header_superior">
             <!-- menu de navegacion, a futuro hacer hamburgesa a la izquierda, con X para cerrar -->
-            <nav>
-                <ul>
+            <nav class="nav" id="nav">
+                <button class="abrir-menu" id="abrir">abrir</button>
+                <button class="cerrar-menu" id="cerrar">cerrar</button>
+                <ul class="nav-list">
                     <li><a href="#esenciales">Esenciales</a></li>
                     <li><a href="productos.html">Productos</a></li>
                     <li><a href="#top_5">Top 5 🔥</a></li>
-                    <!-- <li><a href="#experiencias">Experiencias</a></li>
+                    <li><a href="#experiencias">Experiencias</a></li>
                     <li><a href="#regalos">Box Regalos🎁</a></li>
                     <li><a href="#contacto_mayoristas">¿Tenés un estudio?</a></li>
-                    <li><a href="ayuda.html">Ayuda</a></li> -->
+                    <li><a href="ayuda.html">Ayuda</a></li>
                 </ul>
             </nav>
 
@@ -33,7 +36,7 @@
         <h1> Yoga y Elementos</h1>
 
         <!-- iconos lateral derecho: lupita para buscar y carrito -->
-        <ul>
+        <ul class="lupa-y-carrito">
             <li><a href="" target="_blank"><img src="IMAGENES/ICONOS/icon_lupa.png" alt="lupa" width="25px"></a></li>
             <li><a href="" target="_blank"><img src="IMAGENES/ICONOS/icon_carrito.png" alt="carrito" width="25px"></a></li>
         </ul>    
@@ -255,5 +258,6 @@
 
     </footer>
 
+    <script src="./js/main.js"></script>
 </body>
 </html>
