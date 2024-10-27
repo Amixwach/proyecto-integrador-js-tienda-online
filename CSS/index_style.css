@@ -131,7 +131,7 @@ header a img:hover {
 
 .abrir-menu,
 .cerrar-menu {
-    display: none;
+    display: block;
 }
 
 
@@ -303,9 +303,4 @@ footer a:hover {
     .lupa-y-carrito {
         margin: 10px;
 }
-}
-
-.abrir-menu,
-.cerrar-menu {
-    display: block;
 }
