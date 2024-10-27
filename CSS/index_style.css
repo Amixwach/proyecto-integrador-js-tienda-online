@@ -33,21 +33,77 @@ body {
     justify-content: space-between;
     padding: 10px;
     align-items: center;
+    background-color: #ececec;
 }
 
-.header_superior h1 {
-    font-size: 1.5rem;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-align: center;
+.abrir-menu,
+.cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
 }
 
-.header_superior ul {
-    list-style: none;
-    font-size: 1rem;
+.abrir-menu {
+    color: #1c1c1c;
 }
 
-/* ESTILO PARA LAS ANCHOR DEL HEADER Y EL FOOTER */
+.nav-lupa-y-carrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lupa-y-carrito {
+    display: flex;
+}
+
+.lupa-y-carrito img {
+    margin: 10px;
+}
+
+.nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1c1c1c;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+}
+
+.nav.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #ececec;
+}
+
+.cerrar-menu {
+    color: #ececec;
+}
+
+
+
+/* ESTILO PARA LAS ANCHOR DEL HEADER */
 header a {
     text-decoration: none;
 }
@@ -60,27 +116,24 @@ header a:hover {
 header a img:hover {
     transform: scale(1.1); 
 }
-footer a:link :visited{
-    color:rgb(100, 0, 84);
+
+
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
 }
-footer a:hover {
-    font-weight: 600;
+
+.nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
 
 
 /* ESTILO PARA TODAS LAS CATEGORIAS */
@@ -104,7 +157,6 @@ footer a:hover {
     transform: scale(1.02);
 }
 
-
 article {
     text-align: left;
     padding: 1.25rem; 
@@ -115,6 +167,7 @@ article {
     width: 200px;
     min-width: 200px;
 }
+
 
 /* ESTILO PARA EL INTERIOR DE LAS CARDS DE PRODUCTOS */
 article h3 {
@@ -129,7 +182,6 @@ article .precio {
 
 
 /* ESTILO PARA SECCION DEL FORMULARIO DE CONTACTO */
-/* aca tengo que corregir flexbox se ve pesimo en telefono */
 
 .seccion_contacto {
     text-align: center;
@@ -184,6 +236,7 @@ button:hover {
     background-color: rgba(59, 6, 82, 0.8);
 }
 
+
 /* ESTILO PARA EL FOOTER */
 footer ul, footer a {
     padding: 10px;
@@ -202,52 +255,47 @@ footer a:visited {
 footer a img:hover {
     transform: scale(1.1); 
 }
+footer a:hover {
+    font-weight: 600;
+}
 
-@media screen and (max-width: 550px) {
+
+
+/* Estilos para pantallas grandes */
+
+
+@media screen and (min-width: 768px) {
     .abrir-menu,
     .cerrar-menu {
-        display: block;
-        border: 0;
-        font-size: 1.25rem;
-        background-color: transparent;
-        cursor: pointer;
+        display: none;
     }
 
-    .abrir-menu {
-        color: #1c1c1c;
-    }
-
-    .cerrar-menu {
-        color: #ececec;
+    .header_superior {
+        display:flex;
+        flex-direction: row;
     }
 
     .nav {
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #1c1c1c;
-        padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-    }
-
-    .nav.visible {
         opacity: 1;
         visibility: visible;
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
     }
-    
+
     .nav-list {
-        flex-direction: column;
-        align-items: end;
+        flex-direction: row;
+        align-items: center;
     }
 
     .nav-list li a {
-        color: #ecececec;
+        color: #1c1c1c;
     }
+
+    .lupa-y-carrito {
+        margin: 10px;
+}
 }
