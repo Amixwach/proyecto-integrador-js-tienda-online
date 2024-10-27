@@ -40,7 +40,7 @@ body {
 .cerrar-menu {
     display: block;
     border: 0;
-    font-size: 1.25rem;
+    font-size: 2rem;
     background-color: transparent;
     cursor: pointer;
 }
@@ -117,8 +117,6 @@ header a:hover {
 header a img:hover {
     transform: scale(1.1); 
 }
-
-
 
 .nav-list {
     list-style-type: none;
@@ -266,6 +264,11 @@ footer a:hover {
 
 
 @media screen and (min-width: 768px) {
+
+    .logo {
+        height: 50px;
+    }
+
     .abrir-menu,
     .cerrar-menu {
         display: none;
