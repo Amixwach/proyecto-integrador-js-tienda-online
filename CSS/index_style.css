@@ -57,6 +57,7 @@ body {
 
 .lupa-y-carrito {
     display: flex;
+    list-style: none;
 }
 
 .lupa-y-carrito img {
@@ -298,4 +299,9 @@ footer a:hover {
     .lupa-y-carrito {
         margin: 10px;
 }
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: block;
 }
