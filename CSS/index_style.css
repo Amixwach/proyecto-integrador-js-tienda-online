@@ -85,6 +85,12 @@ body {
     visibility: visible;
 }
 
+.nav.visible {
+    opacity: 1 !important;
+    visibility: visible !important;
+} 
+
+
 .nav-list {
     list-style-type: none;
     display: flex;
