@@ -162,7 +162,7 @@ header a img:hover {
     transform: scale(1.02);
 }
 
-article {
+.productos_por_categorias article {
     text-align: left;
     padding: 1.25rem; 
     margin: 0rem 0.8rem 1.2rem 1rem; 
@@ -184,6 +184,25 @@ article p {
 article .precio {
     font-weight: 600;
 }
+
+/* ESTILO PARA LA SECCION DE RESEÑAS */
+
+.seccion_reseñas{ 
+background-color: #ffffff;
+padding: 20px;
+}
+
+.seccion_reseñas h2 {
+    font-size: 1rem
+}
+
+.seccion_reseñas p {
+    text-align: left;
+    padding: 0.5rem; 
+    margin: 1rem 1rem 2rem 0rem; 
+    }
+    
+
 
 
 /* ESTILO PARA SECCION DEL FORMULARIO DE CONTACTO */
@@ -296,7 +315,6 @@ footer a:hover {
         padding: 0;
     }
 
-
     .nav-list {
         flex-direction: row;
         align-items: center;
@@ -308,6 +326,21 @@ footer a:hover {
 
     .lupa-y-carrito {
         margin: 10px;
+}
+
+.categorias_de_productos {
+    margin-top: 20px;
+}
+.productos_por_categorias {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.titulo_categoria {
+    font-size: 1.2rem;
+    padding-left: 10px;
+    margin: 10px;
 }
 
 footer {
